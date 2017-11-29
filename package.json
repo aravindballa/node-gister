@@ -9,8 +9,14 @@
     "gist",
     "github"
   ],
-  "author": "Aravind Balla",
+  "author": "Aravind Balla (http://aravindballa.com)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aravindballa/node-gister/issues"
+  },
+  "repository": {
+    "url": "https://github.com/aravindballa/node-gister"
+  },
   "dependencies": {
     "axios": "^0.17.1",
     "commander": "^2.12.2"
