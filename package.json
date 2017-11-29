@@ -1,0 +1,18 @@
+{
+  "name": "gister",
+  "version": "1.0.0",
+  "description": "A simple node package which creates GitHub Gist based on files.",
+  "preferGlobal": true,
+  "bin": "./gister.js",
+  "keywords": [
+    "node",
+    "gist",
+    "github"
+  ],
+  "author": "Aravind Balla",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "commander": "^2.12.2"
+  }
+}
