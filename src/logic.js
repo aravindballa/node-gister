@@ -1,18 +1,9 @@
 const fs = require('fs');
 const axios = require('axios');
 
-const publish = (filename) => {
-  const content = fs.readFileSync(filename, 'utf-8');
-  
-  const data = {
-    "description": "the description for this gist",
-    "public": true,
-    "files": {
-    }
-  }
-  data.files[filename] = { 'content': content};
-
-  axios.post('https://api.github.com/gists', data)
+export async function publish(filename) {
+  const postData = await getPostData(filename);
+  axios.post('https://api.github.com/gists', postData)
     .then((response) => {
       console.log('A gist was sucessfully created..');
       console.log(response.data.html_url);
@@ -22,6 +13,13 @@ const publish = (filename) => {
     })
 };
 
-module.exports = {
-  publish
+export function getPostData(filename) {
+  const content = fs.readFileSync(filename, 'utf-8');
+  let data = {
+    "description": "",
+    "public": true,
+    "files": {}
+  }
+  data.files[filename] = {'content': content};
+  return data;
 }
