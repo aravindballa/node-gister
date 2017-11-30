@@ -3,7 +3,19 @@
   "version": "1.0.0",
   "description": "A simple node package which creates GitHub Gist based on files.",
   "preferGlobal": true,
-  "bin": "./gister.js",
+  "bin": {
+    "gister": "build/gister.js"
+  },
+  "main": "build/gister.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
   "keywords": [
     "node",
     "gist",
@@ -15,10 +27,16 @@
     "url": "https://github.com/aravindballa/node-gister/issues"
   },
   "repository": {
-    "url": "https://github.com/aravindballa/node-gister"
+    "type": "git",
+    "url": "git+https://github.com/aravindballa/node-gister"
   },
   "dependencies": {
     "axios": "^0.17.1",
     "commander": "^2.12.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "watch": "^1.0.2"
   }
 }
