@@ -1,7 +1,7 @@
 const fs = require('fs');
 const axios = require('axios');
 
-export async function publish(filename) {
+ async function publish(filename) {
   const postData = await getPostData(filename);
   axios.post('https://api.github.com/gists', postData)
     .then((response) => {
@@ -13,7 +13,7 @@ export async function publish(filename) {
     })
 };
 
-export function getPostData(filename) {
+ function getPostData(filename) {
   const content = fs.readFileSync(filename, 'utf-8');
   let data = {
     "description": "",
@@ -23,3 +23,5 @@ export function getPostData(filename) {
   data.files[filename] = {'content': content};
   return data;
 }
+
+export { publish,getPostData}
