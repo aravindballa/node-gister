@@ -1,6 +1,6 @@
 # node-gister
 
-A simple node package which creates GitHub Gist based on files.
+A simple node package which creates GitHub Gist from files via command line. 📝
 
 ### Usage
 

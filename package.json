@@ -1,5 +1,5 @@
 {
-  "name": "gister",
+  "name": "gister-cli",
   "version": "1.0.0",
   "description": "A simple node package which creates GitHub Gist based on files.",
   "preferGlobal": true,
@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "node",
