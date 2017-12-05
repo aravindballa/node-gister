@@ -35,5 +35,3 @@ and
 ```shell
 node build/gister.js f <filename>
 ```
-
-*Will publish as an NPM package soon!*
