@@ -1,6 +1,6 @@
 {
   "name": "gister-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple node package which creates GitHub Gist based on files.",
   "preferGlobal": true,
   "bin": {
