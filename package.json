@@ -4,21 +4,24 @@
   "description": "A simple node package which creates GitHub Gist based on files.",
   "preferGlobal": true,
   "bin": {
-    "gister": "build/gister.js"
+    "gister-cli": "dist/gister.js"
   },
-  "main": "build/gister.js",
+  "main": "dist/gister.js",
   "scripts": {
     "dev": "watch 'npm run build' src",
-    "build": "babel src -d build",
+    "build": "babel src -d dist",
     "test": "jest",
     "prepublish": "npm run build"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "node",
     "gist",
     "github"
   ],
-  "author": "Aravind Balla (http://aravindballa.com)",
+  "author": "Aravind Balla <bsaaravind@gmail.com> (http://aravindballa.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aravindballa/node-gister/issues"
@@ -38,5 +41,9 @@
     "babel-preset-env": "^1.6.1",
     "jest": "^21.2.1",
     "watch": "^1.0.2"
+  },
+  "engines": {
+    "node": ">= 8",
+    "npm": ">= 5"
   }
 }
