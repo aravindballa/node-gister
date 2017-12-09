@@ -1,6 +1,6 @@
 # node-gister
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
-
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](https://github.com/aravindballa/node-gister)
 [![npm](https://img.shields.io/npm/dm/gister-cli.svg?style=flat-square)]()
 
 A simple node package which creates GitHub Gist from files via command line. 📝
