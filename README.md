@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/aravindballa/node-giste/master/node-gister.png"/>
+  <img src="https://raw.githubusercontent.com/aravindballa/node-gister/master/node-gister.png"/>
 </p>
 
 <h3 align="center">Publish gists from CLI</h3>
