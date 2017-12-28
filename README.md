@@ -2,8 +2,6 @@
   <img src="https://raw.githubusercontent.com/aravindballa/node-gister/master/node-gister.png"/>
 </p>
 
-<h3 align="center">Publish gists from CLI</h3>
-
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](https://github.com/aravindballa/node-gister)
 [![npm](https://img.shields.io/npm/dm/gister-cli.svg?style=flat-square)]()
