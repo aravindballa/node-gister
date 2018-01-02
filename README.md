@@ -5,6 +5,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square)](https://github.com/aravindballa/node-gister)
 [![npm](https://img.shields.io/npm/dm/gister-cli.svg?style=flat-square)]()
+[![Help Contribute to Open Source](https://www.codetriage.com/aravindballa/node-gister/badges/users.svg)](https://www.codetriage.com/aravindballa/node-gister)
 
 A simple node package which creates GitHub Gist from files via command line. 📝
 
@@ -32,7 +33,7 @@ First, do a `npm install` and build the package
 
 ```shell
 npm run build
-``` 
+```
 
 and
 
